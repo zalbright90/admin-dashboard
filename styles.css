@@ -12,6 +12,34 @@ Emerald color scheme
 900: #064e3b
 950: #022c22
 */
+@font-face {
+    font-family:'sourceSans';
+    src: url('fonts/SourceSans3-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sourceSansItalic';
+    src: url('fonts/SourceSans3-Italic.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sourceSansBold';
+    src: url('fonts/SourceSans3-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sourceSansBoldItalic';
+    src: url('fonts/SourceSans3-BoldItalic.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
 
 * {
     margin: 0;
@@ -20,20 +48,67 @@ Emerald color scheme
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'sourceSans', sans-serif;
     background-color: #ecfdf5;
-    color: #333;
+    color: #022c22;
 }
 
 .dashboard {
     display: grid;
     grid-template-columns: 250px 1fr;
     grid-template-rows: 100vh;
+    height: 100vh;
 }
 
 .sidebar {
     background-color: #047857;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.brand-logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.brand-name {
+    font-size: 24px;
+    color: #ecfdf5;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    color: #ecfdf5;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.nav-item img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.nav-item:hover,
+.nav-item.active {
+    background-color: #065f46;
+    cursor: pointer;
 }
 
 .main-content {
@@ -42,6 +117,7 @@ body {
     grid-template-rows: 2fr 1fr 1fr;
     gap: 20px;
     padding: 20px;
+    background-color: #ecfdf5;
 }
 
 .header {
@@ -51,6 +127,27 @@ body {
     background-color: #ecfdf5;
     padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
 .projects {
