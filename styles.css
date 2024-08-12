@@ -41,7 +41,9 @@ Emerald color scheme
     font-style: normal;
 }
 
-* {
+/* Custom Reset */
+
+*, *:before, *:after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -51,6 +53,26 @@ body {
     font-family: 'sourceSans', Arial, sans-serif;
     background-color: #ecfdf5;
     color: #022c22;
+    line-height: 1.5;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
 }
 
 .container {

@@ -8,180 +8,221 @@
 </head>
 <body>
     <div class="container">
-        <aside class="sidebar">
-            <h1><img src="icons/dashboard.svg" alt="Dashboard">Dashboard</h1>
-            <nav>
-                <ul>
-                    <li><a href="#"><img src="/icons/home.svg" alt="">Home</a></li>
-                    <li><a href="#"><img src="/icons/profile.svg" alt="">Profile</a></li>
-                    <li><a href="#"><img src="/icons/message.svg" alt="">Messages</a></li>
-                    <li><a href="#"><img src="/icons/history.svg" alt="">History</a></li>
-                    <li><a href="#"><img src="/icons/tasks.svg" alt="">Tasks</a></li>
-                    <li><a href="#"><img src="/icons/community.svg" alt="">Communities</a></li>
-                </ul>
-                <ul>
-                    <li><a href=""><img src="/icons/settings.svg" alt="">Settings</a></li>
-                    <li><a href=""><img src="/icons/support.svg" alt="">Support</a></li>
-                    <li><a href=""><img src="/icons/private.svg" alt="">Privacy</a></li>
-                </ul>
-            </nav>
-        </aside>
         <header class="header">
-            <img src="icons/search.svg" alt="Search">
-            <div class="search-bar">
-                <input type="text" placeholder="Search...">
+            <form class="search-section">
+                <button type="submit" class="search-btn icon"></button>
+                <input type="text" class="search-bar">
+            </form>
+            <div class="profile-section">
+                <img src="icons/bell-alert.svg" alt class="notify-btn icon">
+                <img src="avatars/me.png" alt class="user-btn">
+                <span class="profile-name">Asmund Martinson</span>
             </div>
-            <div class="user-info">
-                    <img src="/icons/notify.svg" alt="Notification Icon">
-                    <img src="/icons/user.svg" alt="User Avatar">
-                <span>Asmund Martinson</span>
-            </div>
-            <div class="greeting-card">
-                <span class="greeting">Good morning,</span> <span class="name">Asmund!</span>
-            </div>
-        </header>
-        <main class="main-content">
-            <div class="projects-section">
-                <div class="projects">
-                    <div class="project-card">
-                        <h3>Super Cool Project</h3>
-                            <p>1. Gáttir allar áðr gangi fram<br>
-                            um skoðask skyli,<br>
-                            um skyggnast skyli,<br>
-                            því at óvíst er at vita hvar óvinir<br>
-                            sitja á fleti fyrir.</p>
-                        <div class="project-actions">
-                            <img src="/icons/favorited.svg" alt="Favorite Icon">
-                            <img src="/icons/visibility.svg" alt="Watch Icon">
-                            <img src="/icons/link.svg" alt="Hyperlink Icon">
-                        </div>
+            <div class="greeting-section">
+                <img src="avatars/me.png" alt class="user-icon">
+                <div>
+                    <div class="greeting-text">
+                    Hello there,
                     </div>
-                    <div class="project-card">
-                        <h3>Another Cool Project</h3>
-                        <p>2. Gefendr heilir!<br>
-                            Gestr er inn kominn,<br>
-                            hvar skal sitja sjá? Mjök er bráðr<br>
-                            sá er á bröndum skal síns of freista frama.</p>
-                            <div class="project-actions">
-                                <img src="/icons/favorited.svg" alt="Favorite Icon">
-                                <img src="/icons/visibility.svg" alt="Watch Icon">
-                                <img src="/icons/link.svg" alt="Hyperlink Icon">
-                            </div>
-                    </div>
-                    <div class="project-card">
-                        <h3>And Another Project</h3>
-                        <p>3. Elds er þörf þeims inn er kominn<br>
-                            ok á kné kalinn.<br>
-                            Matar ok váða er manni þörf,<br>
-                            þeim er hefr um fjall farit.</p>
-                            <div class="project-actions">
-                                <img src="/icons/favorited.svg" alt="Favorite Icon">
-                                <img src="/icons/visibility.svg" alt="Watch Icon">
-                                <img src="/icons/link.svg" alt="Hyperlink Icon">
-                            </div>
-                    </div>
-                    <div class="project-card">
-                        <h3>Project Four</h3>
-                        <p>4. Vatns er þörf þeim er til<br>
-                            verðar kemr, þerru ok þjóðlaðar,<br>
-                            góðs of æðis ef sér geta mætti<br>
-                            orðs ok endrþögu.</p>
-                            <div class="project-actions">
-                                <img src="/icons/favorited.svg" alt="Favorite Icon">
-                                <img src="/icons/visibility.svg" alt="Watch Icon">
-                                <img src="/icons/link.svg" alt="Hyperlink Icon">
-                            </div>
-                    </div>
-                    <div class="project-card">
-                        <h3>Project!</h3>
-                        <p>5. Vits er þörf þeim er víða ratar;<br>
-                            dælt er heima hvat;<br>
-                            at augabragði verðr<br>
-                            sá er ekki kann ok með snotrum sitr.                        
-                            </p>
-                            <div class="project-actions">
-                                <img src="/icons/favorited.svg" alt="Favorite Icon">
-                                <img src="/icons/visibility.svg" alt="Watch Icon">
-                                <img src="/icons/link.svg" alt="Hyperlink Icon">
-                            </div>
-                    </div>
-                    <div class="project-card">
-                        <h3>Yet Another Project</h3>
-                        <p>6. At hyggjandi sinni skyli-t maðr hræsinn vera,<br>
-                        heldr gætinn at geði; þá er horskr ok þögull<br>
-                        kemr heimisgarða til, sjaldan verðr víti vörum,<br>
-                        því at óbrigðra vin fær maðr aldregi<br>
-                        en mannvit mikit.</p>
-                            <div class="project-actions">
-                                <img src="/icons/favorited.svg" alt="Favorite Icon">
-                                <img src="/icons/visibility.svg" alt="Watch Icon">
-                                <img src="/icons/link.svg" alt="Hyperlink Icon">
-                            </div>
-                    </div>
-                    <div class="project-card">
-                        <h3>And Another...</h3>
-                        <p>7. Inn vari gestr, er til verðar kemr,<br>
-                            þunnu hljóði þegir, eyrum hlýðir,<br>
-                            en augum skoðar;<br>
-                            svá nýsisk fróðra hverr fyrir.</p>
-                            <div class="project-actions">
-                                <img src="/icons/favorited.svg" alt="Favorite Icon">
-                                <img src="/icons/visibility.svg" alt="Watch Icon">
-                                <img src="/icons/link.svg" alt="Hyperlink Icon">
-                            </div>
-                    </div>
-                    <div class="project-card">
-                        <h3>How About A Project?!</h3>
-                        <p>8. Hinn er sæll, er sér of getr<br>
-                            lof ok líknstafi;<br>
-                            ódælla er við þat,<br>
-                            er maðr eiga skal annars brjóstum í.</p>
-                            <div class="project-actions">
-                                <img src="/icons/favorited.svg" alt="Favorite Icon">
-                                <img src="/icons/visibility.svg" alt="Watch Icon">
-                                <img src="/icons/link.svg" alt="Hyperlink Icon">
-                            </div>
-                    </div>
-                    <div class="project-card">
-                        <h3>Last Project</h3>
-                        <p>9. Sá er sæll, er sjalfr of á<br>
-                            lof ok vit, meðan lifir;<br>
-                            því at ill ráð<br>
-                            hefr maðr oft þegit annars brjóstum ór.
-                            
-                            </p>
-                            <div class="project-actions">
-                                <img src="/icons/favorited.svg" alt="Favorite Icon">
-                                <img src="/icons/visibility.svg" alt="Watch Icon">
-                                <img src="/icons/link.svg" alt="Hyperlink Icon">
-                            </div>
+                    <div class="user-name">Asmund Martinson (@midgardmortal)</div>
                 </div>
             </div>
-            <div class="side-content">
-                <h2>Announcements</h2>
+            <div class="button-section">
+                <button class="new-btn btn">New</button>
+                <button class="upload-btn btn">Upload</button>
+                <button class="share-btn btn">Share</button>
+            </div>
+        </header>
+        <section class="sidebar">
+            <div class="logo">
+                <img src="icons/dashboard.svg" alt class="dashboard-icon">
+                <h1 class="dashboard-text">Dashboard</h1>
+            </div>
+            <nav class="actions-nav">
+                <ul>
+                    <li class="action-list"><a href="#"><img src="/icons/home.svg" alt="">Home</a></li>
+                    <li class="action-list"><a href="#"><img src="/icons/profile.svg" alt="">Profile</a></li>
+                    <li class="action-list"><a href="#"><img src="/icons/message.svg" alt="">Messages</a></li>
+                    <li class="action-list"><a href="#"><img src="/icons/history.svg" alt="">History</a></li>
+                    <li class="action-list"><a href="#"><img src="/icons/tasks.svg" alt="">Tasks</a></li>
+                    <li class="action-list"><a href="#"><img src="/icons/community.svg" alt="">Communities</a></li>
+                </ul>
+            </nav>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="action-list"><a href=""><img src="/icons/settings.svg" alt="">Settings</a></li>
+                    <li class="action-list"><a href=""><img src="/icons/support.svg" alt="">Support</a></li>
+                    <li class="action-list"><a href=""><img src="/icons/private.svg" alt="">Privacy</a></li>
+                </ul>
+            </nav>
+        </section>
+        <main class="main">
+            <section class="main-section">
+                <h2 class="section-title">Projects</h2>
+                    <div class="projects">
+                        <div class="project-card">
+                            <div>
+                                <h3 class="card-title">Super Cool Project</h3>
+                                <p class="card-content">1. Gáttir allar áðr gangi fram<br>
+                                um skoðask skyli,<br>
+                                um skyggnast skyli,<br>
+                                því at óvíst er at vita hvar óvinir<br>
+                                sitja á fleti fyrir.</p>
+                            </div>
+                            <div>
+                                <img src="/icons/favorited.svg" alt class="icon">
+                                <img src="/icons/visibility.svg" alt class="icon">
+                                <img src="/icons/link.svg" alt class="icon">
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <h3 class="card-title">Another Cool Project</h3>
+                            <p class="card-content">2. Gefendr heilir!<br>
+                                Gestr er inn kominn,<br>
+                                hvar skal sitja sjá? Mjök er bráðr<br>
+                                sá er á bröndum skal síns of freista frama.</p>
+                                <div class="project-actions">
+                                    <img src="/icons/favorited.svg" alt class="icon">
+                                    <img src="/icons/visibility.svg" alt class="icon">
+                                    <img src="/icons/link.svg" alt class="icon">
+                                </div>
+                        </div>
+                        <div class="project-card">
+                            <h3 class="card-title">And Another Project</h3>
+                            <p class="card-content">3. Elds er þörf þeims inn er kominn<br>
+                                ok á kné kalinn.<br>
+                                Matar ok váða er manni þörf,<br>
+                                þeim er hefr um fjall farit.</p>
+                                <div class="project-actions">
+                                    <img src="/icons/favorited.svg" alt class="icon">
+                                    <img src="/icons/visibility.svg" alt class="icon"">
+                                    <img src="/icons/link.svg" alt class="icon">
+                                </div>
+                        </div>
+                        <div class="project-card">
+                            <h3 class="card-title">Project Four</h3>
+                            <p class="card-content">4. Vatns er þörf þeim er til<br>
+                                verðar kemr, þerru ok þjóðlaðar,<br>
+                                góðs of æðis ef sér geta mætti<br>
+                                orðs ok endrþögu.</p>
+                                <div class="project-actions">
+                                    <img src="/icons/favorited.svg" alt class="icon">
+                                    <img src="/icons/visibility.svg" alt class="icon">
+                                    <img src="/icons/link.svg" alt class="icon">
+                                </div>
+                        </div>
+                        <div class="project-card">
+                            <h3 class="card-title">Project!</h3>
+                            <p class="card-content">5. Vits er þörf þeim er víða ratar;<br>
+                                dælt er heima hvat;<br>
+                                at augabragði verðr<br>
+                                sá er ekki kann ok með snotrum sitr.                        
+                                </p>
+                                <div class="project-actions">
+                                    <img src="/icons/favorited.svg" alt class="icon">
+                                    <img src="/icons/visibility.svg" alt class="icon">
+                                    <img src="/icons/link.svg" alt class="icon">
+                                </div>
+                        </div>
+                        <div class="project-card">
+                            <h3 class="card-title">Yet Another Project</h3>
+                            <p class="card-content">6. At hyggjandi sinni skyli-t maðr hræsinn vera,<br>
+                            heldr gætinn at geði; þá er horskr ok þögull<br>
+                            kemr heimisgarða til, sjaldan verðr víti vörum,<br>
+                            því at óbrigðra vin fær maðr aldregi<br>
+                            en mannvit mikit.</p>
+                                <div class="project-actions">
+                                    <img src="/icons/favorited.svg" alt class="icon">
+                                    <img src="/icons/visibility.svg" alt class="icon">
+                                    <img src="/icons/link.svg" alt class="icon">
+                                </div>
+                        </div>
+                        <div class="project-card">
+                            <h3 class="card-title">And Another...</h3>
+                            <p class="card-content">7. Inn vari gestr, er til verðar kemr,<br>
+                                þunnu hljóði þegir, eyrum hlýðir,<br>
+                                en augum skoðar;<br>
+                                svá nýsisk fróðra hverr fyrir.</p>
+                                <div class="project-actions">
+                                    <img src="/icons/favorited.svg" alt class="icon">
+                                    <img src="/icons/visibility.svg" alt class="icon">
+                                    <img src="/icons/link.svg" alt class="icon">
+                                </div>
+                        </div>
+                        <div class="project-card">
+                            <h3 class="card-title">How About A Project?!</h3>
+                            <p class="card-content">8. Hinn er sæll, er sér of getr<br>
+                                lof ok líknstafi;<br>
+                                ódælla er við þat,<br>
+                                er maðr eiga skal annars brjóstum í.</p>
+                                <div class="project-actions">
+                                    <img src="/icons/favorited.svg" alt class="icon">
+                                    <img src="/icons/visibility.svg" alt class="icon">
+                                    <img src="/icons/link.svg" alt class="icon">
+                                </div>
+                        </div>
+                        <div class="project-card">
+                            <h3 class="card-title">Last Project</h3>
+                            <p class="card-content">9. Sá er sæll, er sjalfr of á<br>
+                            lof ok vit, meðan lifir;<br>
+                            því at ill ráð<br>
+                            hefr maðr oft þegit annars brjóstum ór.      
+                            </p>
+                                <div class="project-actions">
+                                    <img src="/icons/favorited.svg" alt class="icon">
+                                    <img src="/icons/visibility.svg" alt class="icon">
+                                    <img src="/icons/link.svg" alt class="icon">
+                                </div>
+                    </div>
+            </section>
+            <section class="anno-section">
+                <h2 class="section-title">Announcements</h2>
                 <div class="announcements">
                     <div class="announcement-item">
-                        <h4>Site Maintenance: Server Upgrade</h4>
-                        <p>Attention all admins: Our servers will undergo a scheduled upgrade on [Date and Time]. During this time, the site will be temporarily unavailable. This upgrade is essential for improving site performance and security. Please ensure that all critical tasks are completed before the maintenance window begins. We apologize for any inconvenience and appreciate your understanding.</p>
+                        <h4 class="anno-title">Site Maintenance: Server Upgrade</h4>
+                        <p class="anno-content">Attention all admins: Our servers will undergo a scheduled upgrade on [Date and Time]. During this time, the site will be temporarily unavailable. This upgrade is essential for improving site performance and security. Please ensure that all critical tasks are completed before the maintenance window begins. We apologize for any inconvenience and appreciate your understanding.</p>
                     </div>
                     <div class="announcement-item">
-                        <h4>Interactive Learning Modules</h4>
-                        <p>We're excited to announce the rollout of new interactive learning modules! These modules are designed to enhance user engagement by offering hands-on experiences with our content. Administrators can now track user progress in real-time and provide feedback directly within the modules. Explore the new features in the 'Learning Management' section.</p>
+                        <h4 class="section-title">Interactive Learning Modules</h4>
+                        <p class="anno-content">We're excited to announce the rollout of new interactive learning modules! These modules are designed to enhance user engagement by offering hands-on experiences with our content. Administrators can now track user progress in real-time and provide feedback directly within the modules. Explore the new features in the 'Learning Management' section.</p>
                     </div>
                 <!-- Add more announcements -->
                 </div>
-                <h2>Trending</h2>
-                <div class="trending">
-                        <div class="trending-item">
-                            <img src="avatars/Tegan.png" alt="@tegan">
+            </section>
+            <section class="trending-section">
+                <h2 class="section-title">Trending</h2>
+                <div class="trend-container">
+                        <div class="trend-item">
+                            <img src="avatars/Tegan.png" alt class="profile-icon">
                             <div>
-                                <h4>@tegan</h4>
-                                <p>World Peace Builder</p>
+                                <h4 class="user-tag">@tegan</h4>
+                                <p class="user-item">World Peace Builder</p>
                             </div>
+                        </div>
+                        <div class="trend-item">
+                            <img src="avatars/chef-mike.png" alt class="profile-icon">
+                            <div>
+                                <h4 class="user-tag">@chef_mike</h4>
+                                <p class="user-item">Recipe Generator</p>
+                            </div>
+                        </div>
+                        <div class="trend-item">
+                            <img src="avatars/Matthew.png" alt class="profile-icon">
+                            <div>
+                                <h4 class="user-tag">@professormatt</h4>
+                                <p class="user-item">Textbook Editor</p>
+                            </div>      
+                        </div>
+                        <div class="trend-item">
+                            <img src="avatars/Nick.png" alt class="profile-icon">
+                            <div>
+                                <h4 class="user-tag">@uncagednicolas</h4>
+                                <p class="user-item">Blog Unblocker</p>
+                            </div>      
                         </div>
                     <!-- Add more trending items -->
                 </div>
-            </div>
+            </section>
         </main>
     </div>
 </body>
