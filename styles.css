@@ -174,7 +174,7 @@ body {
 .main-content {
     grid-column: 2 / -1;
     display: grid;
-    grid-template-columns: 1fr 300px;
+    grid-template-columns: 1fr;
     gap: 20px;
     padding: 20px;
     background-color: #e2e8f0;
@@ -194,7 +194,7 @@ body {
 
 .projects {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
 }
 
@@ -229,9 +229,6 @@ body {
 }
 
 .side-content {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
     overflow: hidden;
 }
 .announcements, .trending {
